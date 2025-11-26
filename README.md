@@ -19,19 +19,6 @@ Estrutura do projeto
 - `style.css` — estilos e media queries.
 - `lista.json` — dados das receitas (array "receitas").
 - `img/` — imagens referenciadas por `foto_url`.
-- `README.md` — este arquivo.
-
-Como executar localmente
-------------------------
-O fetch de `lista.json` requer servidor HTTP (não funciona via `file://`).
-
-Opções rápidas:
-- Python 3:
-  - `python -m http.server 8000`
-  - Abrir `http://localhost:8000`
-- Node (http-server):
-  - `npx http-server . -p 8000`
-  - Abrir `http://localhost:8000`
 
 Uso do sistema de pesquisa
 --------------------------
