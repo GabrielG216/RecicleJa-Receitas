@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+
+/* CSS BÁSICO E ESTILIZAÇÃO GERAL */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #baffc9;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HEADER --- */
+.header {
+    background-color: white; /* Verde Marítimo */
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: #2e8b57 5px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    width: 160px;
+}
+
+.header h1 {
+    margin: 0 0 0 50px;
+    color: #2e8b57;
+    font-family: "League Script", cursive;
+    font-size: 4em;
+}
+
+/* O p.header não estava no HTML anterior, mas foi mantido aqui para completude */
+.header p { 
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* --- GRID DE CARDS --- */
+.container {
+    max-width: 1500px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.recipes-grid {
+    display: grid;
+    /* Ajuste para melhor responsividade em telas menores */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 25px;
+}
+
+/* --- CARD INDIVIDUAL --- */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Importante para o border-radius funcionar com a imagem */
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-left: 5px solid #00850b; /* Destaque lateral */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* NOVO ESTILO PARA A IMAGEM NO CARD */
+.card-image {
+    width: 100%;
+    height: 200px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+    border-bottom: 1px solid #eee;
+}
+
+/* --- PARTES DO CARD --- */
+.card-header {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+.card-header h2 {
+    margin: 0 0 5px 0;
+    color: #2e8b57;
+    font-size: 1.5em;
+}
+
+.card-header .reaproveitamento {
+    font-weight: bold;
+    color: #ffaa00;
+    font-size: 0.9em;
+}
+
+.card-body {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-body p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    text-align: right;
+    border-top: 1px solid #eee;
+}
+
+.card-footer strong {
+    color: #333;
+}
+
+/* --- MODAL (Janela Pop-up) --- */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000; /* Z-index alto para garantir que fique acima de tudo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7); /* Fundo escuro */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%; /* Ajuste para telas menores */
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #2e8b57;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h3 {
+    color: #2e8b57;
+    border-bottom: 2px solid #ffaa00;
+    padding-bottom: 5px;
+    margin-top: 20px; /* Espaço para h3 dentro do modal */
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.modal-content li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* --- FOOTER (semelhante ao header) --- */
+.footer {
+    background-color: white;
+    color: #2e8b57;
+    padding: 18px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+    border-top: #2e8b57 5px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.footer img {
+    width: 120px;
+    display: block;
+}
+
+.footer .footer-text p {
+    margin: 4px 0 0 0;
+    color: #00850b;
+    font-size: 1.2rem;
+}
+
+/* Responsividade do footer já nos breakpoints existentes */
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+        padding: 14px;
+    }
+
+    .footer img {
+        width: 100px;
+        margin-bottom: 6px;
+    }
+
+    .footer .footer-text h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .footer img {
+        width: 80px;
+    }
+
+    .footer .footer-text h2 {
+        font-size: 1.4rem;
+        margin-left: 0;
+    }
+
+    .footer .footer-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* --- Melhorias de responsividade --- */
+
+/* Ajustes para tablets e telas médias */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+
+    .header img {
+        width: 120px;
+        margin: 0 10px 10px 0;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 16px;
+    }
+
+    .recipes-grid {
+        gap: 18px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+    /* Modal menor para telas médias */
+    .modal {
+        padding-top: 40px; /* sobe um pouco o modal para reduzir espaço ocupado */
+    }
+
+    .modal-content {
+        width: 88%;
+        padding: 18px;
+        max-width: 560px; /* menor que antes para telas médias */
+    }
+}
+
+/* Ajustes para celulares pequenos */
+@media (max-width: 480px) {
+    .header {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .header img {
+        width: 90px;
+        margin-bottom: 8px;
+    }
+
+    .header h1 {
+        font-size: 2.4rem;
+        margin-left: 20px;
+    }
+
+    .recipes-grid {
+        grid-template-columns: 1fr; /* Uma coluna para melhor leitura */
+        gap: 12px;
+    }
+
+    .card {
+        border-left-width: 4px;
+    }
+
+    .card-image {
+        height: 140px;
+    }
+
+    .card-header {
+        padding: 14px;
+    }
+
+    .card-body {
+        padding: 14px;
+    }
+
+    .card-footer {
+        padding: 12px 14px;
+        text-align: left;
+    }
+
+    /* Modal ainda menor para celulares */
+    .modal {
+        padding-top: 20px;
+    }
+
+    .modal-content {
+        width: 94%;
+        padding: 12px;
+        max-width: 460px;
+        border-radius: 8px;
+    }
+
+    .close-button {
+        font-size: 26px;
+    }
+}
+
+/* Novos ajustes para telas muito pequenas (ex.: ~320-360px) */
+@media (max-width: 360px) {
+    .modal {
+        padding-top: 12px;
+    }
+
+    .modal-content {
+        width: 98%;
+        padding: 10px;
+        max-width: 380px;
+        border-radius: 6px;
+    }
+
+    .modal-content h3 {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    .modal-content p,
+    .modal-content li,
+    .modal-content ul {
+        font-size: 0.95rem;
+    }
+
+    .close-button {
+        font-size: 24px;
+    }
+}
+
+/* Barra de pesquisa */
+.search-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.search-container input[type="search"],
+.search-container .search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.search-container input[type="search"]:focus {
+    border-color: #2e8b57;
+    box-shadow: 0 6px 18px rgba(46,139,87,0.08);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .search-container {
+        padding: 0 16px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        padding: 0 12px;
+        margin-bottom: 30px;
+    }
+
+    .search-container input[type="search"] {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+}

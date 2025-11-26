@@ -1,0 +1,524 @@
+{
+  "receitas": [
+    {
+      "id": 1,
+      "nome": "Suco de Casca de Abacaxi 🍍",
+      "reaproveitamento": "Casca de Abacaxi",
+      "foto_url": "img/suco_abacaxi.jpg",
+      "descricao": "Uma bebida refrescante e nutritiva, aproveitando a casca do abacaxi que seria descartada.",
+      "ingredientes": [
+        "Casca de 1 abacaxi",
+        "1 litro de água",
+        "Açúcar ou adoçante a gosto",
+        "Folhas de hortelã (opcional)"
+      ],
+      "modo_preparo": "Lave bem a casca do abacaxi. Ferva a casca na água por 15 minutos. Deixe esfriar, bata tudo no liquidificador, coe e adoce. Sirva gelado.",
+      "tempo_preparo": "20 minutos"
+    },
+    {
+      "id": 2,
+      "nome": "Bolo de Casca de Banana 🍌",
+      "reaproveitamento": "Casca de Banana",
+      "foto_url": "img/bolo-casca-banana.jpg",
+      "descricao": "Um bolo fofo e saboroso que utiliza o alto teor de fibras das cascas de banana.",
+      "ingredientes": [
+        "3 Cascas de banana",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de açúcar",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 colher de sopa de fermento"
+      ],
+      "modo_preparo": "Bata as cascas de banana, os ovos e o óleo no liquidificador. Em uma tigela, misture o restante dos ingredientes secos. Despeje a mistura líquida, mexa e coloque em forma untada. Asse em forno médio por 40 minutos.",
+      "tempo_preparo": "50 minutos"
+    },
+    {
+      "id": 3,
+      "nome": "Farofa de Talos de Couve 🥬",
+      "reaproveitamento": "Talos de Couve",
+      "foto_url": "img/farofa_couve.jpg",
+      "descricao": "Uma farofa crocante e rica em nutrientes, perfeita para acompanhar feijoada ou churrasco.",
+      "ingredientes": [
+        "Talos de 1 maço de couve",
+        "1/2 xícara de bacon picado",
+        "1 cebola picada",
+        "2 xícaras de farinha de mandioca",
+        "Azeite, sal e pimenta do reino a gosto"
+      ],
+      "modo_preparo": "Refogue o bacon até soltar a gordura. Adicione a cebola e os talos picados finamente. Quando estiverem macios, adicione a farinha de mandioca e mexa até dourar. Tempere e sirva.",
+      "tempo_preparo": "15 minutos"
+    },
+    {
+      "id": 4,
+      "nome": "Pão de Forma com Sobras 🍞",
+      "reaproveitamento": "Pão Amanhecido (Duro)",
+      "foto_url": "img/pao_sobras.jpg",
+      "descricao": "Um pão caseiro macio, feito com sobras de pão amanhecido, evitando o desperdício.",
+      "ingredientes": [
+        "3 xícaras de pão amanhecido picado",
+        "1 xícara de leite morno",
+        "1/2 xícara de açúcar",
+        "1 ovo",
+        "2 colheres de sopa de manteiga",
+        "1 envelope de fermento biológico seco",
+        "3 xícaras de farinha de trigo"
+      ],
+      "modo_preparo": "Deixe o pão de molho no leite morno. Bata no liquidificador com açúcar, ovo e manteiga. Misture o fermento e a farinha. Sove, deixe crescer e asse em forma de pão por 30-40 minutos.",
+      "tempo_preparo": "2 horas (inclui tempo de crescimento)"
+    },
+    {
+      "id": 5,
+      "nome": "Hambúrguer de Casca de Cenoura 🥕",
+      "reaproveitamento": "Casca de Cenoura e Beterraba",
+      "foto_url": "img/hamburguer_casca.jpg",
+      "descricao": "Um hambúrguer vegetariano saboroso, aproveitando as cascas ricas em fibras e nutrientes.",
+      "ingredientes": [
+        "Cascas de 4 cenouras e 2 beterrabas",
+        "1 xícara de aveia em flocos",
+        "1/2 cebola picada",
+        "Alho, sal e temperos a gosto"
+      ],
+      "modo_preparo": "Higienize e cozinhe as cascas. Triture-as grosseiramente. Misture com a aveia, cebola, alho e temperos até dar liga. Modele os hambúrgueres e frite ou asse.",
+      "tempo_preparo": "45 minutos"
+    },
+    {
+      "id": 6,
+      "nome": "Geleia de Casca de Maracujá",
+      "reaproveitamento": "Casca do Maracujá (Parte branca)",
+      "foto_url": "img/geleia_maracuja.jpg",
+      "descricao": "Uma geleia agridoce deliciosa, feita com a parte branca (albedo) da casca do maracujá.",
+      "ingredientes": [
+        "Casca de 5 maracujás (parte branca)",
+        "2 xícaras de açúcar",
+        "1 xícara de água",
+        "Suco de 1/2 limão"
+      ],
+      "modo_preparo": "Retire o miolo da casca. Corte a parte branca em tiras e ferva em água por 3 vezes para tirar o amargo. Cozinhe com o açúcar, água e limão até dar ponto de geleia.",
+      "tempo_preparo": "1 hora"
+    },
+    {
+      "id": 7,
+      "nome": "Caldo Nutritivo de Ossos",
+      "reaproveitamento": "Ossos de Frango/Carne",
+      "foto_url": "img/caldo_ossos.jpg",
+      "descricao": "Um caldo base rico em colágeno e minerais, feito com os ossos que sobrariam de outras preparações.",
+      "ingredientes": [
+        "1 kg de ossos (frango ou carne)",
+        "3 litros de água",
+        "1 cebola, 2 cenouras (cascas e pontas), talos de salsão",
+        "Folhas de louro e pimenta-do-reino"
+      ],
+      "modo_preparo": "Cozinhe todos os ingredientes em fogo baixo por 4 a 12 horas. Coe, descarte os sólidos e utilize ou congele o caldo.",
+      "tempo_preparo": "4 a 12 horas"
+    },
+    {
+      "id": 8,
+      "nome": "Torta Salgada de Pão Duro",
+      "reaproveitamento": "Pão Amanhecido (Duro) e Sobras de Queijo/Presunto",
+      "foto_url": "img/torta_pao.jpg",
+      "descricao": "Uma torta rápida e substanciosa para aproveitar sobras de pão e recheio na geladeira.",
+      "ingredientes": [
+        "5 fatias de pão duro",
+        "1 xícara de leite",
+        "3 ovos",
+        "Sobras de queijo, presunto, legumes",
+        "Sal e orégano"
+      ],
+      "modo_preparo": "Umedeça o pão no leite. Forre um refratário. Misture os ovos com os recheios e tempere. Despeje sobre o pão e asse por 25 minutos.",
+      "tempo_preparo": "35 minutos"
+    },
+    {
+      "id": 9,
+      "nome": "Chips de Casca de Batata 🥔",
+      "reaproveitamento": "Casca de Batata",
+      "foto_url": "img/chips_batata.jpg",
+      "descricao": "Snack crocante e surpreendente, utilizando a casca da batata, que concentra nutrientes.",
+      "ingredientes": [
+        "Cascas de 5 batatas",
+        "Azeite de oliva",
+        "Sal, páprica defumada e alecrim a gosto"
+      ],
+      "modo_preparo": "Lave e seque bem as cascas. Misture com azeite e temperos. Espalhe em uma assadeira e leve ao forno pré-aquecido a 200°C até ficarem crocantes (cerca de 15 minutos).",
+      "tempo_preparo": "20 minutos"
+    },
+    {
+      "id": 10,
+      "nome": "Arroz Doce com Água de Cozimento",
+      "reaproveitamento": "Água do Cozimento do Arroz",
+      "foto_url": "img/arroz_doce_agua.jpg",
+      "descricao": "Arroz doce mais cremoso e saboroso, usando a água rica em amido que seria descartada.",
+      "ingredientes": [
+        "1 xícara de arroz (já cozido, se for sobra)",
+        "2 xícaras de água do cozimento do arroz (ou a que sobrou)",
+        "1 litro de leite",
+        "1/2 xícara de açúcar",
+        "Canela em pau"
+      ],
+      "modo_preparo": "Cozinhe o arroz com a água do cozimento e o leite até engrossar. Adicione o açúcar e a canela. Cozinhe por mais 10 minutos. Sirva polvilhado com canela em pó.",
+      "tempo_preparo": "40 minutos"
+    },
+    {
+      "id": 11,
+      "nome": "Bolo de Milho com Cabelo de Milho 🌽",
+      "reaproveitamento": "Cabelo de Milho (Estigma)",
+      "foto_url": "img/bolo_cabelo_milho.jpg",
+      "descricao": "Um bolo de milho mais nutritivo, incorporando o cabelo do milho, que possui propriedades diuréticas.",
+      "ingredientes": [
+        "Cabelo de 4 espigas de milho",
+        "3 ovos",
+        "1 lata de milho verde (sem a água)",
+        "1 xícara de farinha de milho",
+        "1/2 xícara de óleo",
+        "1 xícara de açúcar",
+        "1 colher de sopa de fermento"
+      ],
+      "modo_preparo": "Bata no liquidificador o cabelo de milho, os ovos, o milho, o óleo e o açúcar. Misture com a farinha e o fermento. Asse em forma untada por 40 minutos.",
+      "tempo_preparo": "50 minutos"
+    },
+    {
+      "id": 12,
+      "nome": "Patê de Talos de Brócolis 🥦",
+      "reaproveitamento": "Talos de Brócolis",
+      "foto_url": "img/pate_brocolis.jpg",
+      "descricao": "Patê cremoso, rico em fibras, ideal para lanches, feito com o talo que geralmente é descartado.",
+      "ingredientes": [
+        "1 Talos de brócolis (cozidos)",
+        "1/2 pote de maionese (ou iogurte natural)",
+        "1 colher de sopa de azeite",
+        "Alho, sal e pimenta do reino a gosto"
+      ],
+      "modo_preparo": "Cozinhe os talos até ficarem macios. Espere esfriar e bata no processador ou liquidificador com os demais ingredientes até virar um patê homogêneo.",
+      "tempo_preparo": "20 minutos"
+    },
+    {
+      "id": 13,
+      "nome": "Torta de Frango com Sobras de Arroz 🍚",
+      "reaproveitamento": "Arroz Cozido e Sobras de Frango",
+      "foto_url": "img/torta_arroz_frango.jpg",
+      "descricao": "Torta prática, onde o arroz cozido é a base da massa, dando liga e economizando farinha.",
+      "ingredientes": [
+        "2 xícaras de arroz cozido",
+        "2 ovos",
+        "1/2 xícara de leite",
+        "1 xícara de sobras de frango desfiado",
+        "Queijo ralado, sal e fermento"
+      ],
+      "modo_preparo": "Bata o arroz, ovos, leite, sal e fermento no liquidificador. Despeje metade da massa em uma forma. Adicione o recheio de frango desfiado. Cubra com o restante da massa e queijo ralado. Asse por 30 minutos.",
+      "tempo_preparo": "40 minutos"
+    },
+    {
+      "id": 14,
+      "nome": "Chá de Folhas de Limão 🍋",
+      "reaproveitamento": "Folhas de Limoeiro (não tratadas)",
+      "foto_url": "img/cha_folhas_limao.jpg",
+      "descricao": "Um chá calmante e aromático, feito com folhas do limoeiro, que possuem óleos essenciais.",
+      "ingredientes": [
+        "5 folhas frescas de limoeiro",
+        "1 xícara de água fervente",
+        "Açúcar ou mel a gosto"
+      ],
+      "modo_preparo": "Lave bem as folhas. Coloque em uma xícara, despeje a água fervente e abafe por 5 a 8 minutos. Coe e adoce a gosto.",
+      "tempo_preparo": "10 minutos"
+    },
+    {
+      "id": 15,
+      "nome": "Biscoito Salgado de Casca de Queijo",
+      "reaproveitamento": "Casca Dura de Queijos (Parmesão, Grana Padano)",
+      "foto_url": "img/biscoito_casca_queijo.jpg",
+      "descricao": "Biscoito crocante e saboroso, usando as cascas de queijos duros que não são consumidas.",
+      "ingredientes": [
+        "Cascas de queijo duro (raladas)",
+        "1/2 xícara de farinha de trigo",
+        "1/4 xícara de manteiga gelada",
+        "1 gema de ovo",
+        "Água gelada (se necessário)"
+      ],
+      "modo_preparo": "Processe as cascas, farinha e manteiga até formar uma farofa. Adicione a gema. Modele os biscoitos e asse em forno médio por 15 minutos até dourar.",
+      "tempo_preparo": "30 minutos"
+    },
+    {
+      "id": 16,
+      "nome": "Creme de Folhas de Cenoura 🥕",
+      "reaproveitamento": "Folhas (Rama) da Cenoura",
+      "foto_url": "img/creme_folhas_cenoura.jpg",
+      "descricao": "Um creme saboroso, similar ao de espinafre, utilizando as folhas da cenoura ricas em vitamina K.",
+      "ingredientes": [
+        "Folhas de 1 maço de cenoura",
+        "2 batatas cozidas",
+        "1/2 litro de caldo de legumes (ou água)",
+        "Creme de leite ou leite (opcional)",
+        "Sal e alho a gosto"
+      ],
+      "modo_preparo": "Refogue o alho. Adicione as folhas de cenoura e refogue. Bata no liquidificador com as batatas cozidas e o caldo até obter um creme. Volte à panela para aquecer e adicione o creme de leite, se desejar.",
+      "tempo_preparo": "30 minutos"
+    },
+    {
+      "id": 17,
+      "nome": "Rabanada Salgada de Arroz 🍚",
+      "reaproveitamento": "Arroz Cozido (Sobra) e Leite",
+      "foto_url": "img/rabanada_arroz.jpg",
+      "descricao": "Versão salgada e rápida da rabanada, feita com arroz para um acompanhamento diferente.",
+      "ingredientes": [
+        "1 xícara de arroz cozido",
+        "1/2 xícara de leite",
+        "1 ovo",
+        "Farinha de trigo",
+        "Sal e cheiro verde"
+      ],
+      "modo_preparo": "Misture o arroz com o ovo e o cheiro verde. Molde bolinhos. Passe os bolinhos no leite e depois na farinha. Frite em óleo quente até dourar.",
+      "tempo_preparo": "25 minutos"
+    },
+    {
+      "id": 18,
+      "nome": "Bolo de Banana com Farinha de Casca de Ovo 🥚",
+      "reaproveitamento": "Casca de Ovo (moída)",
+      "foto_url": "img/bolo_casca_ovo.jpg",
+      "descricao": "Um bolo que incorpora cálcio extra pela adição da casca de ovo esterilizada e moída.",
+      "ingredientes": [
+        "3 Cascas de ovo (esterilizadas e moídas)",
+        "3 bananas maduras amassadas",
+        "2 xícaras de farinha de trigo",
+        "2 xícaras de açúcar",
+        "3 ovos",
+        "1 colher de sopa de fermento"
+      ],
+      "modo_preparo": "Lave e asse as cascas de ovo para esterilizar, depois triture até virar pó fino. Misture todos os ingredientes do bolo e asse por 40 minutos.",
+      "tempo_preparo": "1 hora (inclui esterilização da casca)"
+    },
+    {
+      "id": 19,
+      "nome": "Doce de Casca de Laranja Cristalizado 🍊",
+      "reaproveitamento": "Casca de Laranja (Grossa)",
+      "foto_url": "img/doce_casca_laranja.jpg",
+      "descricao": "Doce tradicional feito com a casca da laranja, que se transforma em uma guloseima após cozida em calda.",
+      "ingredientes": [
+        "Casca de 5 laranjas (pêra ou bahia)",
+        "3 xícaras de açúcar",
+        "2 xícaras de água"
+      ],
+      "modo_preparo": "Corte as cascas em tiras e ferva por 3 vezes para tirar o amargo. Cozinhe em calda de açúcar e água até as cascas ficarem translúcidas e a calda secar (cristalizar).",
+      "tempo_preparo": "1 hora e 30 minutos"
+    },
+    {
+      "id": 20,
+      "nome": "Sopa de Legumes com Pontas e Talos 🍲",
+      "reaproveitamento": "Pontas, Cascas e Talos de Legumes Diversos",
+      "foto_url": "img/sopa_talos.jpg",
+      "descricao": "Sopa rica em nutrientes, feita com as sobras e aparas de legumes que seriam descartadas.",
+      "ingredientes": [
+        "1 xícara de aparas (cascas de abobrinha, pontas de cenoura, talos de aipo)",
+        "1 batata picada",
+        "1/2 cebola",
+        "1 litro de água ou caldo de legumes",
+        "Sal, pimenta e cheiro verde"
+      ],
+      "modo_preparo": "Refogue a cebola. Adicione as aparas e a batata. Cubra com água/caldo e cozinhe até amolecer. Bata no liquidificador e tempere.",
+      "tempo_preparo": "45 minutos"
+    },
+    {
+      "id": 21,
+      "nome": "Quibe Assado de Berinjela com Casca",
+      "reaproveitamento": "Casca da Berinjela",
+      "foto_url": "img/quibe_berinjela.jpg",
+      "descricao": "Quibe com sabor e fibra intensificados pelo uso da casca da berinjela, que é rica em antioxidantes.",
+      "ingredientes": [
+        "1 xícara de trigo para quibe",
+        "1 Berinjela (com casca, ralada)",
+        "1/2 xícara de hortelã picada",
+        "1/2 cebola ralada",
+        "Azeite, sal e pimenta síria a gosto"
+      ],
+      "modo_preparo": "Hidrate o trigo e esprema. Misture a berinjela ralada, cebola, hortelã e temperos. Amasse bem e coloque em uma forma untada. Regue com azeite e asse por 30 minutos.",
+      "tempo_preparo": "50 minutos"
+    },
+    {
+      "id": 22,
+      "nome": "Bolo de Maçã Integral com Casca 🍎",
+      "reaproveitamento": "Casca da Maçã",
+      "foto_url": "img/bolo_maca_casca.jpg",
+      "descricao": "Bolo úmido de maçã, onde as cascas são batidas na massa, garantindo mais sabor e fibras.",
+      "ingredientes": [
+        "3 maçãs picadas (com casca)",
+        "3 ovos",
+        "1/2 xícara de óleo",
+        "1 xícara de farinha de trigo",
+        "1 xícara de açúcar",
+        "Canela e fermento"
+      ],
+      "modo_preparo": "Bata as maçãs, ovos e óleo no liquidificador. Misture em uma tigela com a farinha, açúcar, canela e fermento. Asse em forma untada por 40 minutos.",
+      "tempo_preparo": "50 minutos"
+    },
+    {
+      "id": 23,
+      "nome": "Bolinho de Feijão com Sobras 🧆",
+      "reaproveitamento": "Feijão Cozido (sem tempero) ou Feijão Seco",
+      "foto_url": "img/bolinho_feijao.jpg",
+      "descricao": "Acarajé ou Abara (bolinho de feijão) simplificado, feito com sobras de feijão branco ou fradinho.",
+      "ingredientes": [
+        "2 xícaras de feijão cozido (sem tempero)",
+        "1 cebola grande",
+        "Sal a gosto",
+        "Óleo para fritar"
+      ],
+      "modo_preparo": "Bata o feijão e a cebola no liquidificador até obter uma massa lisa. Tempere com sal. Frite colheradas em óleo quente.",
+      "tempo_preparo": "30 minutos"
+    },
+    {
+      "id": 24,
+      "nome": "Doce de Abóbora com Sementes 🎃",
+      "reaproveitamento": "Sementes de Abóbora",
+      "foto_url": "img/doce_abobora_sementes.jpg",
+      "descricao": "Doce de abóbora mais completo e nutritivo, adicionando as sementes tostadas.",
+      "ingredientes": [
+        "1 kg de abóbora (polpa)",
+        "Sementes de 1 abóbora",
+        "500g de açúcar",
+        "Cravos e canela em pau"
+      ],
+      "modo_preparo": "Lave e seque as sementes, toste-as levemente. Cozinhe a abóbora picada com açúcar, cravos e canela até amolecer. Adicione as sementes tostadas no final do cozimento.",
+      "tempo_preparo": "1 hora e 15 minutos"
+    },
+    {
+      "id": 25,
+      "nome": "Farofa Doce de Casca de Batata Doce",
+      "reaproveitamento": "Casca de Batata Doce",
+      "foto_url": "img/farofa_batata_doce.jpg",
+      "descricao": "Farofa adocicada e fibrosa, perfeita para acompanhar carnes ou ser servida como sobremesa.",
+      "ingredientes": [
+        "Cascas de 3 batatas doces (cozidas)",
+        "1 xícara de farinha de mandioca",
+        "2 colheres de sopa de manteiga",
+        "1/2 xícara de coco ralado",
+        "Açúcar a gosto"
+      ],
+      "modo_preparo": "Cozinhe as cascas. Triture-as grosseiramente. Derreta a manteiga, adicione as cascas, o coco, o açúcar e a farinha. Mexa até ficar crocante.",
+      "tempo_preparo": "35 minutos"
+    },
+    {
+      "id": 26,
+      "nome": "Muffin de Cenoura com Polpa de Cenoura (Sobra de Suco) 🥕",
+      "reaproveitamento": "Polpa/Bagaço da Cenoura (Sobra de Suco)",
+      "foto_url": "img/muffin_cenoura_bagaço.jpg",
+      "descricao": "Muffin macio, feito com o bagaço fibroso que sobra da preparação de sucos de cenoura.",
+      "ingredientes": [
+        "1 xícara de polpa de cenoura",
+        "2 ovos",
+        "1/2 xícara de óleo",
+        "1 xícara de farinha de trigo",
+        "1/2 xícara de açúcar",
+        "Canela e fermento"
+      ],
+      "modo_preparo": "Misture os ingredientes líquidos com a polpa de cenoura. Adicione os secos. Coloque em forminhas de muffin e asse por 20 minutos.",
+      "tempo_preparo": "30 minutos"
+    },
+    {
+      "id": 27,
+      "nome": "Cerveja de Gengibre Caseira 🍺",
+      "reaproveitamento": "Cascas de Gengibre",
+      "foto_url": "img/cerveja_gengibre.jpg",
+      "descricao": "Bebida fermentada, probiótica e refrescante, usando as cascas de gengibre que seriam jogadas fora.",
+      "ingredientes": [
+        "Cascas de 1 pedaço grande de gengibre",
+        "1/2 xícara de açúcar",
+        "2 litros de água",
+        "Suco de 1 limão",
+        "Pedaço pequeno de gengibre com casca (starter)"
+      ],
+      "modo_preparo": "Misture água, açúcar, cascas e starter. Deixe fermentar em recipiente fechado por 2-3 dias. Coe e sirva gelado (alto teor de CO2).",
+      "tempo_preparo": "3 dias (fermentação)"
+    },
+    {
+      "id": 28,
+      "nome": "Coxinha de Massa de Mandioca com Sobras de Carne",
+      "reaproveitamento": "Mandioca Cozida (Sobra) e Sobras de Carne",
+      "foto_url": "img/coxinha_mandioca.jpg",
+      "descricao": "Coxinha com massa feita de sobras de mandioca amassada, ideal para rechear com carne desfiada.",
+      "ingredientes": [
+        "2 xícaras de mandioca cozida e amassada",
+        "1 gema de ovo",
+        "1 xícara de sobras de carne desfiada (recheio)",
+        "Farinha de rosca para empanar"
+      ],
+      "modo_preparo": "Misture a mandioca com a gema. Modele a massa e recheie com a carne. Empane na farinha de rosca e frite.",
+      "tempo_preparo": "45 minutos"
+    },
+    {
+      "id": 29,
+      "nome": "Pão de Queijo de Ricota Seca",
+      "reaproveitamento": "Soro do Leite (ou Ricota Seca/Dura)",
+      "foto_url": "img/pao_queijo_ricota.jpg",
+      "descricao": "Pão de queijo que utiliza o soro do leite ou ricota que perdeu umidade, aproveitando o lácteo integralmente.",
+      "ingredientes": [
+        "1 xícara de ricota dura/seca ralada",
+        "1 xícara de polvilho doce",
+        "1/2 xícara de leite",
+        "1/4 xícara de óleo",
+        "1 ovo",
+        "Sal a gosto"
+      ],
+      "modo_preparo": "Ferva o leite e o óleo e despeje sobre o polvilho (escaldar). Deixe esfriar e misture o ovo e a ricota ralada. Modele e asse por 25 minutos.",
+      "tempo_preparo": "40 minutos"
+    },
+    {
+      "id": 30,
+      "nome": "Molho de Pimenta Cremoso com Talos de Pimentão 🌶️",
+      "reaproveitamento": "Talos e Sementes de Pimentão",
+      "foto_url": "img/molho_pimentao.jpg",
+      "descricao": "Molho caseiro picante, usando as partes internas do pimentão (talos e sementes) para dar corpo e sabor.",
+      "ingredientes": [
+        "Talos e sementes de 3 pimentões (vermelho/amarelo)",
+        "1 pimenta dedo-de-moça",
+        "1/2 xícara de vinagre",
+        "1/4 xícara de azeite",
+        "Sal e alho a gosto"
+      ],
+      "modo_preparo": "Cozinhe os talos, sementes e pimenta por 10 minutos. Bata no liquidificador com vinagre, azeite, sal e alho. Coe se preferir um molho mais fino.",
+      "tempo_preparo": "25 minutos"
+    },
+    {
+      "id": 31,
+      "nome": "Pizza com Base de Purê de Batata Sobrante",
+      "reaproveitamento": "Purê de Batata (Sobra)",
+      "foto_url": "img/pizza_pure.jpg",
+      "descricao": "Base de pizza fofa e saborosa, feita com as sobras de purê de batata do dia anterior.",
+      "ingredientes": [
+        "2 xícaras de purê de batata frio",
+        "1 ovo",
+        "1/2 xícara de farinha de trigo",
+        "1 colher de chá de fermento químico",
+        "Sal e queijo ralado (opcional)"
+      ],
+      "modo_preparo": "Misture todos os ingredientes até formar uma massa homogênea. Espalhe em uma assadeira untada, faça furos com um garfo e pré-asse por 10 minutos. Adicione o recheio e asse novamente.",
+      "tempo_preparo": "30 minutos"
+    },
+    {
+      "id": 32,
+      "nome": "Chá de Casca de Cebola 🧅",
+      "reaproveitamento": "Casca Externa da Cebola",
+      "foto_url": "img/cha_cebola.jpg",
+      "descricao": "Chá com propriedades antioxidantes, utilizando as cascas mais externas da cebola, ricas em quercetina.",
+      "ingredientes": [
+        "Cascas de 2 cebolas (apenas as mais externas, secas e limpas)",
+        "1 litro de água",
+        "Mel e limão (para servir)"
+      ],
+      "modo_preparo": "Lave as cascas. Ferva a água e adicione as cascas. Deixe em infusão por 10 minutos. Coe bem e sirva quente com mel e limão.",
+      "tempo_preparo": "15 minutos"
+    },
+    {
+      "id": 33,
+      "nome": "Mousse de Abacate com Caroço Tostado",
+      "reaproveitamento": "Caroço de Abacate",
+      "foto_url": "img/mousse_abacate_caroço.jpg",
+      "descricao": "Mousse cremoso com o acréscimo do caroço de abacate, que, após tostado e moído, é rico em fibras e antioxidantes.",
+      "ingredientes": [
+        "1 abacate maduro",
+        "1/2 xícara de cacau em pó",
+        "Adoçante a gosto",
+        "1 caroço de abacate (ralado e tostado)"
+      ],
+      "modo_preparo": "Lave e toste o caroço no forno. Rale-o finamente. Bata no liquidificador o abacate, cacau, adoçante e a metade do pó do caroço tostado. Sirva gelado.",
+      "tempo_preparo": "25 minutos"
+    }
+  ]
+}

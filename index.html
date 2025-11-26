@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecicleJá - Receitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="img/logo-recicle.jpg" alt="">
+        <h1>Receitas</h1>
+    </div>
+
+    <div class="container">
+        <!-- Barra de pesquisa adicionada -->
+        <div class="search-container">
+            <input id="searchInput" type="search" placeholder="🔍 Pesquisar receitas (nome, ingrediente ou reaproveitamento)..." aria-label="Pesquisar receitas">
+        </div>
+
+        <div id="recipes-list" class="recipes-grid">
+            </div>
+    </div>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modal-recipe-name"></h2>
+            <p><strong id="modal-reaproveitamento-info"></strong></p>
+            <hr>
+            <h3>Descrição</h3>
+            <p id="modal-description"></p>
+            
+            <h3>Ingredientes</h3>
+            <ul id="modal-ingredients"></ul>
+
+            <h3>Modo de Preparo</h3>
+            <p id="modal-prep-method"></p>
+
+            <p><small>Tempo de Preparo: <strong id="modal-prep-time"></strong></small></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="img/logo-recicle.jpg" alt="Logo RecicleJá">
+        <div class="footer-text">
+            <p>Receitas e dicas para reduzir o desperdício <br> Turma 2001 - Abner Afonso 2025 <br> Professora Fabiana</p>
+        </div>
+    </footer>
+
+    <script>
+        // JS para buscar, processar e exibir o JSON
+        const recipesList = document.getElementById('recipes-list');
+        const modal = document.getElementById('recipeModal');
+        const closeModalButton = document.querySelector('.close-button');
+        const searchInput = document.getElementById('searchInput');
+
+        // Função principal para buscar e renderizar as receitas
+        async function fetchAndRenderRecipes() {
+            try {
+                // 1. Puxa as informações do arquivo lista.json
+                const response = await fetch('lista.json');
+                if (!response.ok) {
+                    throw new Error(`Erro de rede: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                const receitas = data.receitas;
+
+                // 2. Itera sobre cada receita e cria o card
+                receitas.forEach(receita => {
+                    const card = createRecipeCard(receita);
+                    recipesList.appendChild(card);
+                });
+
+            } catch (error) {
+                console.error("Erro ao buscar as receitas:", error);
+                recipesList.innerHTML = '<p style="color: red;">Não foi possível carregar as receitas. Verifique se o arquivo **lista.json** está na mesma pasta, se está formatado corretamente e se o campo **foto_url** está presente em todas as receitas.</p>';
+            }
+        }
+
+        // Função para criar o elemento HTML (Card) de uma receita
+        function createRecipeCard(receita) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            // adiciona tags para pesquisa (nome, reaproveitamento e ingredientes)
+            const tags = [
+                receita.nome || '',
+                receita.reaproveitamento || '',
+                (receita.ingredientes || []).join(' ')
+            ].join(' ').toLowerCase();
+            card.dataset.tags = tags;
+
+            // Define o que acontece ao clicar no card (abre o modal)
+            card.onclick = () => openModal(receita);
+
+            // Adicionado a tag <img>
+            card.innerHTML = `
+                <img src="${receita.foto_url || 'placeholder.jpg'}" alt="Foto da receita ${receita.nome}" class="card-image">
+                <div class="card-header">
+                    <h2>${receita.nome}</h2>
+                    <span class="reaproveitamento">Feito com: ${receita.reaproveitamento}</span>
+                </div>
+                <div class="card-body">
+                    <p>${receita.descricao}</p>
+                </div>
+                <div class="card-footer">
+                    <strong>Tempo:</strong> ${receita.tempo_preparo}
+                </div>
+            `;
+            return card;
+        }
+
+        // --- Funções do Modal ---
+
+        // Abre o modal e preenche com os dados da receita clicada
+        function openModal(receita) {
+            document.getElementById('modal-recipe-name').textContent = receita.nome;
+            document.getElementById('modal-reaproveitamento-info').textContent = `Reaproveitamento: ${receita.reaproveitamento}`;
+            document.getElementById('modal-description').textContent = receita.descricao;
+            document.getElementById('modal-prep-method').textContent = receita.modo_preparo;
+            document.getElementById('modal-prep-time').textContent = receita.tempo_preparo;
+            
+            // Lista de Ingredientes
+            const ingredientsList = document.getElementById('modal-ingredients');
+            ingredientsList.innerHTML = ''; // Limpa a lista anterior
+            receita.ingredientes.forEach(ingrediente => {
+                const li = document.createElement('li');
+                li.textContent = ingrediente;
+                ingredientsList.appendChild(li);
+            });
+
+            modal.style.display = "block";
+        }
+
+        // Fecha o modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Filtra os cards conforme o texto digitado
+        function filterRecipes(query) {
+            const q = (query || '').trim().toLowerCase();
+            const cards = Array.from(recipesList.querySelectorAll('.card'));
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const tags = card.dataset.tags || '';
+                if (!q || tags.includes(q)) {
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Mensagem quando não há resultados
+            const existingMsg = document.getElementById('no-results');
+            if (visibleCount === 0) {
+                if (!existingMsg) {
+                    const p = document.createElement('p');
+                    p.id = 'no-results';
+                    p.textContent = 'Nenhuma receita encontrada.';
+                    p.style.color = '#555';
+                    p.style.gridColumn = '1 / -1';
+                    p.style.textAlign = 'center';
+                    recipesList.appendChild(p);
+                }
+            } else {
+                if (existingMsg) existingMsg.remove();
+            }
+        }
+
+        // Evento no input de pesquisa
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => filterRecipes(e.target.value));
+        }
+
+        // Fecha o modal se o usuário clicar fora dele
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Executa a função principal ao carregar a página
+        fetchAndRenderRecipes();
+    </script>
+
+    <!-- Footer simples, visual parecido com o header -->
+    
+</body>
+</html>
